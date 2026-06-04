@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TOP UP GAME</h1>
+
+    <form id="topupForm">
+        <label>ID Game</label>
+        <input type="text" id="gameId" placeholder="Masukkan ID Game" required>
+
+        <label>Nickname</label>
+        <input type="text" id="nickname" placeholder="Masukkan Nickname" required>
+
+        <label>Pilih Nominal</label>
+        <select id="nominal" required>
+            <option value="">-- Pilih Nominal --</option>
+            <option value="86 Diamonds - Rp20.000">86 Diamonds - Rp20.000</option>
+            <option value="172 Diamonds - Rp40.000">172 Diamonds - Rp40.000</option>
+            <option value="257 Diamonds - Rp60.000">257 Diamonds - Rp60.000</option>
+            <option value="344 Diamonds - Rp80.000">344 Diamonds - Rp80.000</option>
+        </select>
+
+        <label>Metode Pembayaran</label>
+        <select id="payment" required>
+            <option value="">-- Pilih Pembayaran --</option>
+            <option>DANA</option>
+            <option>OVO</option>
+            <option>GoPay</option>
+            <option>QRIS</option>
+            <option>Bank Transfer</option>
+        </select>
+
+        <button type="submit">
+            Pesan via WhatsApp
+        </button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
